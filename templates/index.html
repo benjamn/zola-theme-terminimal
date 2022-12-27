@@ -92,15 +92,12 @@
         {% endblock content %}
     </div>
 
+    {% block commento %}
+    <script defer src="https://cdn.commento.io/js/commento.js"></script>
+    <div id="commento"></div>
+    {% endblock commento %}
+
     {% block footer %}
-    <script src="https://utteranc.es/client.js"
-            repo="benjamn/benjamn.dev"
-            issue-term="pathname"
-            label="Comment"
-            theme="dark-blue"
-            crossorigin="anonymous"
-            async>
-    </script>
     <footer class="footer">
         <div class="footer__inner">
             {%- if config.extra.copyright_html %}
