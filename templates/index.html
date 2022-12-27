@@ -93,6 +93,14 @@
     </div>
 
     {% block footer %}
+    <script src="https://utteranc.es/client.js"
+            repo="benjamn/benjamn.dev"
+            issue-term="pathname"
+            label="Comment"
+            theme="dark-blue"
+            crossorigin="anonymous"
+            async>
+    </script>
     <footer class="footer">
         <div class="footer__inner">
             {%- if config.extra.copyright_html %}
@@ -107,7 +115,7 @@
 
                     <span class="copyright-theme">
                         <span class="copyright-theme-sep">:: </span>
-                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                        Theme : <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a>
                     </span>
                 </div>
             {% endif -%}
