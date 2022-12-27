@@ -93,8 +93,10 @@
     </div>
 
     {% block commento %}
+    {%- if page.path %}
     <script defer src="https://cdn.commento.io/js/commento.js"></script>
     <div id="commento"></div>
+    {% endif -%}
     {% endblock commento %}
 
     {% block footer %}
